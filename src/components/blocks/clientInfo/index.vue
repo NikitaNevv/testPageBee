@@ -1,29 +1,29 @@
 <template>
-    <div class="blocks-user-header-info" @click="emits('click')">
-        <div class="blocks-user-header-info__box">
-            <span class="blocks-user-header-info__title">{{userName}}</span>
-            <span class="blocks-user-header-info__role">{{userRole}}</span>
-        </div>
+    <div class="blocks-client-info" @click="emits('click')">
+        <img class="blocks-client-info__icon" :src="clientIcon" alt="user logo">
 
-        <img class="blocks-user-header-info__icon" :src="userIcon" alt="user logo">
+        <div class="blocks-client-info__box">
+            <a class="blocks-client-info__title">{{clientName}}</a>
+            <span class="blocks-client-info__role">{{clientRole}}</span>
+        </div>
     </div>
 </template>
 
 <script>
-export default {name: 'BlocksUserHeaderInfo'}
+export default {name: 'BlocksClientInfo'}
 </script>
 
-<script setup >
+<script setup>
 const props = defineProps({
-    userName: {
+    clientName: {
         type: String,
-        default: 'User Name'
+        default: 'Client Name'
     },
-    userRole: {
+    clientRole: {
         type: String,
-        default: 'Uer role'
+        default: 'Client role'
     },
-    userIcon: {
+    clientIcon: {
         type: String,
         default: './src/assets/images/empty-user-icon.svg'
     },
@@ -33,21 +33,22 @@ const emits = defineEmits(['click'])
 </script>
 
 <style lang="scss" scoped>
-.blocks-user-header-info {
+.blocks-client-info {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 18px;
+    cursor: pointer;
 
     &__box {
         display: flex;
         flex-direction: column;
-        gap: 6px;
+        gap: 4px;
     }
 
     &__title {
-        font-family: $mulish-font;
+        font-family: $montserrat-font;
         font-weight: 700;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 1;
     }
 
@@ -60,9 +61,10 @@ const emits = defineEmits(['click'])
     }
 
     &__icon {
-        width: 56px;
-        height: 56px;
+        width: 54px;
+        height: 54px;
         border-radius: 100px;
     }
 }
+
 </style>
