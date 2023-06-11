@@ -16,7 +16,9 @@
             <UiBtnSecondary>Message</UiBtnSecondary>
         </div>
 
+        <BlocksQuickQuestion class="section-client-options__quick-question"/>
 
+        <BlocksOfferParameters class="section-client-options__offer-params"/>
     </div>
 </template>
 
@@ -28,6 +30,8 @@ export default {name: 'SectionClientDescription'}
 import BlocksClientInfo from '../../blocks/clientInfo/index.vue'
 import UiBtnSecondary from '../../ui/buttonSecondary/index.vue'
 import {reactive} from 'vue'
+import BlocksQuickQuestion from '../../blocks/quickQuestion/index.vue'
+import BlocksOfferParameters from '../../blocks/offerParameters/index.vue'
 
 const data = reactive({
     clientName: 'Michael ',
@@ -69,6 +73,14 @@ const data = reactive({
         justify-content: space-between;
         align-items: center;
         margin-top: 34px;
+    }
+
+    &__quick-question {
+        margin-top: 34px;
+    }
+
+    &__offer-params {
+        margin-top: 50px;
     }
 }
 </style>

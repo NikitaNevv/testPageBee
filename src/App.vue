@@ -22,6 +22,8 @@ import SectionClientOptions from './components/sections/clientDescription/index.
         display: flex;
         gap: 70px;
         margin-top: 42px;
+
+        padding-bottom: 100px;
     }
 }
 </style>

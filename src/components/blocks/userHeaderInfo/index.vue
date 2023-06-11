@@ -37,6 +37,7 @@ const emits = defineEmits(['click'])
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 
     &__box {
         display: flex;
