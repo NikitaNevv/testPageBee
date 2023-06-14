@@ -6,6 +6,8 @@
 
         <div class="wrapper page-main__offer">
             <SectionClientOptions/>
+
+            <SectionsUserOffer/>
         </div>
     </div>
 </template>
@@ -14,6 +16,7 @@
 import SectionHeader from './components/sections/header/index.vue'
 import SectionsPhotoSlider from './components/sections/photoSlider/index.vue'
 import SectionClientOptions from './components/sections/clientDescription/index.vue'
+import SectionsUserOffer from './components/sections/userOffer/index.vue'
 </script>
 
 <style lang="scss" scoped>

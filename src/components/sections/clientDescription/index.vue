@@ -43,6 +43,8 @@ const data = reactive({
 <style lang="scss" scoped>
 .section-client-options {
     display: flex;
+    flex-basis: 50%;
+
     flex-direction: column;
     font-family: $montserrat-font;
 

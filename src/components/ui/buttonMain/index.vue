@@ -1,6 +1,7 @@
 <template>
     <button
         class="ui-btn-main"
+        type="button"
         :class="classes"
         @click="emits('click')"
     >
