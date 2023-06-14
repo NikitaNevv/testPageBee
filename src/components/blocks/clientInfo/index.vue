@@ -11,6 +11,22 @@
             <a class="blocks-client-info__title">{{clientName}}</a>
             <span class="blocks-client-info__role">{{clientRole}}</span>
         </div>
+        <div class="blocks-client-info__box">
+            <a class="blocks-client-info__title">{{clientName}}</a>
+            <span class="blocks-client-info__role">{{clientRole}}</span>
+        </div>
+        <div class="blocks-client-info__box">
+            <a class="blocks-client-info__title">{{clientName}}</a>
+            <span class="blocks-client-info__role">{{clientRole}}</span>
+        </div>
+        <div class="blocks-client-info__box">
+            <a class="blocks-client-info__title">{{clientName}}</a>
+            <span class="blocks-client-info__role">{{clientRole}}</span>
+        </div>
+        <div class="blocks-client-info__box">
+            <a class="blocks-client-info__title">{{clientName}}</a>
+            <span class="blocks-client-info__role">{{clientRole}}</span>
+        </div>
     </div>
 </template>
 
